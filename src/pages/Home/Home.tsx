@@ -3,16 +3,17 @@ import Header from "../../components/Layout/Header";
 import AboutSection from "../../components/sections/AboutSection";
 import ContactSection from "../../components/sections/ContactSection";
 import HeroSection from "../../components/sections/HeroSection";
-import Marquee from "../../components/sections/Marquee";
 import ProjectsSection from "../../components/sections/ProjectsSection";
+import TechStrip from "../../components/sections/TechStrip";
+import "./Home.style.css";
 
 function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="home-page">
         <HeroSection />
-        <Marquee />
+        <TechStrip />
         <ProjectsSection />
         <AboutSection />
         <ContactSection />

@@ -1,0 +1,84 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.about-text {
+  margin-top: 1.5rem;
+  font-size: 0.975rem;
+  color: var(--muted);
+  line-height: 1.85;
+  font-weight: 300;
+}
+
+.about-text p {
+  margin-bottom: 1.1rem;
+}
+
+.about-text strong {
+  color: var(--ink2);
+  font-weight: 500;
+}
+
+.about-text .hl {
+  color: var(--tan);
+  font-weight: 500;
+}
+
+.about-text .hl-purple {
+  color: var(--aurora);
+  font-weight: 500;
+}
+
+.skill-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+.skill-block-title {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--muted2);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.625rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.8rem;
+  color: var(--ink2);
+  font-weight: 400;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background 0.2s;
+}
+
+.chip:hover {
+  border-color: var(--tan);
+  color: var(--tan);
+  background: var(--tan-dim);
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

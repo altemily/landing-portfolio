@@ -1,0 +1,42 @@
+.tech-strip {
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  padding: 1.1rem 0;
+  background: var(--bg2);
+}
+
+.tech-strip-track {
+  display: flex;
+  gap: 0;
+  animation: tech-strip-scroll 28s linear infinite;
+  width: max-content;
+}
+
+.tech-strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.tech-strip-item::after {
+  content: "·";
+  color: var(--tan);
+  font-size: 1.2rem;
+}
+
+@keyframes tech-strip-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

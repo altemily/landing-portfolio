@@ -1,5 +1,6 @@
 import { projects } from "../../data/portfolio";
 import ProjectCard from "../projects/ProjectCard";
+import "./ProjectsSection.style.css";
 
 function ProjectsSection() {
   return (

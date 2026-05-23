@@ -3,6 +3,8 @@ export type Project = {
   name: string;
   subtitle: string;
   description: string;
+  summary?: string;
+  image?: string;
   tags: Array<{ label: string; tone?: "tan" | "purple" | "green" }>;
   stack: string[];
   impact?: string;

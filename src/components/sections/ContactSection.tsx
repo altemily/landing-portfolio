@@ -1,5 +1,6 @@
 import { Download, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import { contactTopics } from "../../data/portfolio";
+import "./ContactSection.style.css";
 
 function ContactSection() {
   return (
@@ -13,9 +14,8 @@ function ContactSection() {
               <em>algo juntos?</em>
             </h2>
             <p className="contact-sub">
-              Disponível para desenvolvimento web e mobile, MVPs, automações,
-              consultoria em Power Platform e prototipagem de produto digital. Me manda
-              uma mensagem.
+             Disponível para desenvolvimento web e mobile, MVPs, APIs, dashboards e prototipagem de produto digital. 
+              <p>Se você tem uma ideia, um processo para melhorar ou um sistema para tirar do papel, podemos conversar.</p>
             </p>
             <div className="contact-topics">
               {contactTopics.map((topic) => (

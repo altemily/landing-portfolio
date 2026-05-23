@@ -1,4 +1,5 @@
 import { skillGroups } from "../../data/portfolio";
+import "./AboutSection.style.css";
 
 function AboutSection() {
   return (
@@ -12,22 +13,24 @@ function AboutSection() {
             </h2>
             <div className="about-text">
               <p>
-                Sou <strong>Ariane Carvalho</strong> — Desenvolvedora FullStack &
-                Mobile com atuação em produto, design e arquitetura. Trabalho no{" "}
-                <strong>Senac Labs</strong> desenvolvendo sistemas reais para educação,
-                segurança pública e gestão.
+                Sou <strong>Ariane Carvalho</strong>, Desenvolvedora FullStack &
+                Mobile com olhar de produto, design e arquitetura de soluções.
+                Atuo no <strong>Senac Labs EduTech</strong>, desenvolvendo sistemas para
+                educação, segurança pública, gestão e melhoria de processos.
               </p>
+
               <p>
-                Fundadora de <span className="hl">Alt.</span> e{" "}
-                <span className="hl">Tangerina Labs</span> — dois ecossistemas de
-                produto independentes onde construo apps com identidade e propósito
-                próprios. <span className="hl-purple">Microsoft Elevate Expert.</span>
+                Também construo produtos autorais pela{" "}
+                <span className="hl">Alt.</span> e pela 
+                <span className="hl"> Tangerina Labs</span>, meus espaços de
+                experimentação, estudo e criação de apps com identidade própria.{" "}
               </p>
+
               <p>
-                Cursando Sistemas de Informação na Estácio. Técnica formada pelo Senac
-                RN. Acredito que{" "}
-                <strong>código bom é aquele que resolve um problema real</strong>, tem
-                identidade visual e pode crescer.
+                Curso o sétimo período de Sistemas de Informação na Estácio e sou Técnica em Desenvolvimento de Sistemas formada pelo Senac RN. 
+                Acredito que código bom é aquele que resolve um
+                problema real, tem uma experiência bem pensada e nasce com
+                espaço para crescer.
               </p>
             </div>
           </div>
