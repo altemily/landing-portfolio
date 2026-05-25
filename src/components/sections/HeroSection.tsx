@@ -8,8 +8,7 @@ function HeroSection() {
         <div className="hero-inner">
           <div className="hero-content">
             <div className="hero-eyebrow">
-              <span className="dot-live" />
-              Disponível para projetos freelance
+              Desenvolvedora FullStack & Mobile · Produto · Design
             </div>
 
             <h1>
@@ -21,13 +20,9 @@ function HeroSection() {
             </h1>
 
             <p className="hero-desc">
-              Desenvolvedora FullStack & Mobile com olhar de produto e design.
-              Crio{" "}
-              <strong>
-                sistemas funcionais, bem construídos e com identidade
-              </strong>
-              , para negócios, instituições e produtos digitais que precisam
-              mais do que uma ideia bonita: precisam funcionar.
+              Desenvolvedora FullStack & Mobile com olhar de produto, design e
+              entrega real. Pronta para atuar em times, produtos e projetos
+              estratégicos.
             </p>
 
             <div className="hero-actions">

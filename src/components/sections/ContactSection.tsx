@@ -14,8 +14,13 @@ function ContactSection() {
               <em>algo juntos?</em>
             </h2>
             <p className="contact-sub">
-             Disponível para desenvolvimento web e mobile, MVPs, APIs, dashboards e prototipagem de produto digital. 
-              <p>Se você tem uma ideia, um processo para melhorar ou um sistema para tirar do papel, podemos conversar.</p>
+              Aberta a oportunidades CLT, projetos estratégicos e
+              desenvolvimento de soluções web e mobile. Atuo com sistemas, APIs,
+              dashboards, prototipagem e MVPs.
+              <p>
+                Se você tem uma vaga, uma ideia, um processo para melhorar ou um
+                sistema para tirar do papel, podemos conversar.
+              </p>
             </p>
             <div className="contact-topics">
               {contactTopics.map((topic) => (
@@ -55,7 +60,11 @@ function ContactSection() {
               <Instagram size={15} />
               @builtbyariane
             </a>
-            <a href="/Ariane-Carvalho-CV.pdf" className="clink clink-accent" download>
+            <a
+              href="/Ariane-Carvalho-CV.pdf"
+              className="clink clink-accent"
+              download
+            >
               <Download size={15} />
               Baixar currículo
             </a>

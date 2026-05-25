@@ -30,7 +30,6 @@ function Header() {
           <a href="#" className="nav-logo" aria-label="builtbyariane">
             built<em>by</em>ariane
           </a>
-          <span className="dot-live nav-status-dot" aria-hidden="true" />
         </div>
         <ul
           id="main-menu"

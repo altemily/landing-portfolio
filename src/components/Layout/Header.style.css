@@ -124,11 +124,6 @@
   outline-offset: 3px;
 }
 
-.nav-status-dot {
-  flex-shrink: 0;
-  margin-top: 0.1rem;
-}
-
 @media (max-width: 768px) {
   .nav-inner {
     padding: 0 1.35rem;
