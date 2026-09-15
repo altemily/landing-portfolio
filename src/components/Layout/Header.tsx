@@ -1,4 +1,4 @@
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Download, Menu, Moon, Sun, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import "./Header.style.css";
 
@@ -15,7 +15,7 @@ function Header() {
       return savedTheme === "dark";
     }
 
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return false;
   });
 
   useEffect(() => {
@@ -36,6 +36,11 @@ function Header() {
           className={isMenuOpen ? "nav-links nav-links-open" : "nav-links"}
         >
           <li>
+            <a href="#inicio" onClick={() => setIsMenuOpen(false)}>
+              Início
+            </a>
+          </li>
+          <li>
             <a href="#projetos" onClick={() => setIsMenuOpen(false)}>
               Projetos
             </a>
@@ -46,7 +51,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="#contato" className="nav-cta" onClick={() => setIsMenuOpen(false)}>
+            <a href="#contato" onClick={() => setIsMenuOpen(false)}>
               Contato
             </a>
           </li>
@@ -62,6 +67,14 @@ function Header() {
           >
             {isDarkMode ? <Sun size={16} /> : <Moon size={16} />}
           </button>
+          <a
+            href={`${import.meta.env.BASE_URL}Ariane-Carvalho-CV.pdf`}
+            className="nav-cv"
+            download
+          >
+            <Download size={14} />
+            <span>Baixar currículo</span>
+          </a>
           <button
             type="button"
             className="menu-toggle"

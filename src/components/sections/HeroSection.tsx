@@ -1,37 +1,27 @@
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, Linkedin } from "lucide-react";
 import "./HeroSection.style.css";
 
 function HeroSection() {
   return (
-    <section className="hero">
+    <section className="hero" id="inicio">
       <div className="wrap">
         <div className="hero-inner">
           <div className="hero-content">
-            <div className="hero-eyebrow">
-              Desenvolvedora FullStack & Mobile · Produto · Design
-            </div>
+            <div className="hero-eyebrow">Olá, eu sou a Ariane</div>
 
             <h1>
-              Dev & product <em>builder</em>
-              <br />
-              <span className="serif-light hero-kicker">
-                Código, produto e design para tirar ideias do papel.
-              </span>
+              Mobile Engineer
+              <span className="hero-kicker">Apps que chegam às mãos de pessoas reais.</span>
             </h1>
 
             <p className="hero-desc">
-              Desenvolvedora FullStack & Mobile com olhar de produto, design e
-              entrega real. Pronta para atuar em times, produtos e projetos
-              estratégicos.
+              Construo aplicações Android e iOS com React Native e Expo — da
+              arquitetura às APIs, integrações e publicação.
             </p>
 
             <div className="hero-actions">
               <a href="#projetos" className="btn-dark">
                 Ver projetos <ArrowRight size={14} strokeWidth={2.5} />
-              </a>
-
-              <a href="#contato" className="btn-outline">
-                Entrar em contato
               </a>
 
               <a
@@ -42,8 +32,43 @@ function HeroSection() {
                 <Download size={14} />
                 Baixar currículo
               </a>
+              <a
+                href="https://www.linkedin.com/in/arianebcarvalho/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-linkedin"
+              >
+                <Linkedin size={15} /> LinkedIn
+              </a>
             </div>
           </div>
+
+          <div className="hero-visual" aria-label="Área reservada para screenshots de aplicativos">
+            <div className="phone phone-back" aria-hidden="true">
+              <span className="phone-bar" />
+              <div className="screen-label">APP / 02</div>
+              <div className="screen-lines">
+                <i /><i /><i />
+              </div>
+            </div>
+            <div className="phone phone-front" aria-hidden="true">
+              <span className="phone-bar" />
+              <div className="screen-mark">AC</div>
+              <div className="screen-copy">
+                <strong>Mobile,</strong>
+                <span>by design.</span>
+              </div>
+              <div className="screen-action">01 — EXPLORE</div>
+            </div>
+            <div className="visual-note">screens reais<br />em breve</div>
+          </div>
+        </div>
+
+        <div className="hero-proof" aria-label="Áreas de atuação">
+          <span><b>01</b> Projetos reais</span>
+          <span><b>02</b> Android &amp; iOS</span>
+          <span><b>03</b> Arquitetura mobile</span>
+          <span><b>04</b> APIs &amp; integrações</span>
         </div>
       </div>
     </section>

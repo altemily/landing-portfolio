@@ -4,9 +4,8 @@ function Footer() {
   return (
     <footer>
       <div className="wrap footer-inner">
-        <p>
-          © 2026 <span>builtbyariane</span> · Ariane Carvalho
-        </p>
+        <p className="footer-brand">built<span>by</span>ariane</p>
+        <p>© 2026 Ariane Carvalho</p>
         <p>RN · Brasil</p>
       </div>
     </footer>

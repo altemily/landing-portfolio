@@ -1,5 +1,4 @@
-import { Download, Github, Instagram, Linkedin, Mail } from "lucide-react";
-import { contactTopics } from "../../data/portfolio";
+import { ArrowUpRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import "./ContactSection.style.css";
 
 function ContactSection() {
@@ -8,24 +7,18 @@ function ContactSection() {
       <div className="wrap">
         <div className="contact-box">
           <div>
-            <h2 className="contact-h">
-              Vamos construir
-              <br />
-              <em>algo juntos?</em>
-            </h2>
+            <span className="contact-label">05 / Contato</span>
+            <h2 className="contact-h">Vamos construir algo relevante?</h2>
             <p className="contact-sub">
-              Aberta a oportunidades CLT, projetos estratégicos e
-              desenvolvimento de soluções web e mobile. Atuo com sistemas, APIs,
-              dashboards, prototipagem e MVPs.
-              <p>
-                Se você tem uma vaga, uma ideia, um processo para melhorar ou um
-                sistema para tirar do papel, podemos conversar.
-              </p>
+              Para oportunidades, projetos mobile ou uma boa conversa sobre engenharia.
             </p>
-            <div className="contact-topics">
-              {contactTopics.map((topic) => (
-                <span key={topic}>{topic}</span>
-              ))}
+            <div className="contact-actions">
+              <a href="mailto:altemilyc@gmail.com" className="contact-primary">
+                Entrar em contato <ArrowUpRight size={16} />
+              </a>
+              <a href={`${import.meta.env.BASE_URL}Ariane-Carvalho-CV.pdf`} className="contact-secondary" download>
+                <Download size={15} /> Currículo
+              </a>
             </div>
           </div>
           <div className="contact-links">
@@ -50,23 +43,6 @@ function ContactSection() {
             >
               <Github size={15} />
               GitHub
-            </a>
-            <a
-              href="https://instagram.com/builtbyariane"
-              target="_blank"
-              rel="noreferrer"
-              className="clink"
-            >
-              <Instagram size={15} />
-              @builtbyariane
-            </a>
-            <a
-              href="/Ariane-Carvalho-CV.pdf"
-              className="clink clink-accent"
-              download
-            >
-              <Download size={15} />
-              Baixar currículo
             </a>
           </div>
         </div>

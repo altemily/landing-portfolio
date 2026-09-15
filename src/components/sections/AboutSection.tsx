@@ -1,56 +1,32 @@
-import { skillGroups } from "../../data/portfolio";
 import "./AboutSection.style.css";
 
 function AboutSection() {
   return (
-    <section className="sec" id="sobre">
+    <section className="sec about-section" id="sobre">
       <div className="wrap">
         <div className="about-grid">
-          <div>
-            <span className="sec-num">— 02</span>
-            <h2 className="sec-title">
-              Produto <em>acima de tudo</em>
-            </h2>
+          <div className="about-main">
+            <span className="sec-num">04 / Sobre</span>
+            <h2 className="sec-title">Engenharia mobile do começo ao fim.</h2>
             <div className="about-text">
               <p>
-                Sou <strong>Ariane Carvalho</strong>, Desenvolvedora FullStack &
-                Mobile com olhar de produto, design e arquitetura de soluções.
-                Atuo no <strong>Senac Labs EduTech</strong>, desenvolvendo sistemas para
-                educação, segurança pública, gestão e melhoria de processos.
+                Sou <strong>Ariane Carvalho, Mobile Engineer</strong>. Construo
+                aplicações para problemas reais, pensando na arquitetura, na
+                experiência e no caminho até a publicação.
               </p>
-
               <p>
-                Também construo produtos autorais pela{" "}
-                <span className="hl">Alt.</span> e pela 
-                <span className="hl"> Tangerina Labs</span>, meus espaços de
-                experimentação, estudo e criação de apps com identidade própria.{" "}
-              </p>
-
-              <p>
-                Curso o sétimo período de Sistemas de Informação na Estácio e sou Técnica em Desenvolvimento de Sistemas formada pelo Senac RN. 
-                Acredito que código bom é aquele que resolve um
-                problema real, tem uma experiência bem pensada e nasce com
-                espaço para crescer.
+                Minha experiência Full-stack amplia essa atuação: conecto o app
+                a APIs, dados e integrações, com visão do fluxo completo e das
+                decisões que sustentam o produto.
               </p>
             </div>
           </div>
 
-          <div>
-            <span className="sec-num">— Stack</span>
-            <div className="skill-col">
-              {skillGroups.map((group) => (
-                <div className="skill-block" key={group.title}>
-                  <div className="skill-block-title">{group.title}</div>
-                  <div className="skill-chips">
-                    {group.skills.map((skill) => (
-                      <span className="chip" key={skill}>
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="about-aside" aria-label="Formação e experiência">
+            <div className="about-fact"><span>Atuação</span><strong>Senac Labs EduTech</strong></div>
+            <div className="about-fact"><span>Formação</span><strong>Sistemas de Informação</strong></div>
+            <div className="about-fact"><span>Construindo</span><strong>Alt. Software Lab</strong></div>
+            <div className="about-fact"><span>Reconhecimento</span><strong>Microsoft Elevate Educator Expert</strong><small>2026—2027</small></div>
           </div>
         </div>
       </div>

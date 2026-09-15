@@ -1,13 +1,6 @@
-.projects-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 2.5rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.proj-list {
-  display: flex;
-  flex-direction: column;
-}
+.projects-section { background: var(--navy-deep); border-bottom: 0; }
+.projects-section .sec-num, .projects-section .sec-sub { color: rgba(226,234,242,.58); }
+.projects-section .sec-title { color: #f4f7fa; }
+.projects-header { margin-bottom: 3.5rem; }
+.proj-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(2rem,5vw,5rem); }
+@media (max-width: 760px) { .proj-list { grid-template-columns: 1fr; } }

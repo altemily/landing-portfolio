@@ -10,6 +10,8 @@ export type Project = {
   impact?: string;
   confidential?: boolean;
   cta?: { label: string; href: string };
+  kind: string;
+  status?: "content-pending";
 };
 
 export type SkillGroup = {

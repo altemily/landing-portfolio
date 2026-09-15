@@ -1,7 +1,8 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="18" fill="#1C1814"></rect>
-  <circle cx="48" cy="18" r="4" fill="#FF7A2F"></circle>
-  <text x="50%" y="53%" text-anchor="middle" dominant-baseline="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-style="italic" font-weight="400" fill="#FAF8F4">
-    a
+  <rect width="64" height="64" rx="14" fill="#071525"></rect>
+  <path d="M15 47L27.5 17H36.5L49 47H39.5L37.5 41H26L24 47H15ZM28.5 33.5H35L31.8 24L28.5 33.5Z" fill="#F7F5F0"/>
+  <circle cx="49" cy="15" r="3" fill="#8FAECC"></circle>
+  <text x="50%" y="53%" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="0" fill="#F7F5F0">
+    A
   </text>
 </svg>

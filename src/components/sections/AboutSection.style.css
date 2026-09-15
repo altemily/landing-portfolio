@@ -1,84 +1,12 @@
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: start;
-}
-
-.about-text {
-  margin-top: 1.5rem;
-  font-size: 0.975rem;
-  color: var(--muted);
-  line-height: 1.85;
-  font-weight: 300;
-}
-
-.about-text p {
-  margin-bottom: 1.1rem;
-}
-
-.about-text strong {
-  color: var(--ink2);
-  font-weight: 500;
-}
-
-.about-text .hl {
-  color: var(--tan);
-  font-weight: 500;
-}
-
-.about-text .hl-purple {
-  color: var(--aurora);
-  font-weight: 500;
-}
-
-.skill-col {
-  display: flex;
-  flex-direction: column;
-  gap: 1.75rem;
-  margin-top: 0.5rem;
-}
-
-.skill-block-title {
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: var(--muted2);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.625rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.skill-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
-.chip {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 0.35rem 0.8rem;
-  font-size: 0.8rem;
-  color: var(--ink2);
-  font-weight: 400;
-  transition:
-    border-color 0.2s,
-    color 0.2s,
-    background 0.2s;
-}
-
-.chip:hover {
-  border-color: var(--tan);
-  color: var(--tan);
-  background: var(--tan-dim);
-}
-
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-}
+.about-section { padding: 6rem 0; background: var(--bg); }
+.about-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(3rem,7vw,6rem); align-items: center; }
+.about-text { max-width: 610px; margin-top: 1.65rem; color: var(--muted); font-size: 1rem; line-height: 1.8; }
+.about-text p + p { margin-top: 1.15rem; }
+.about-text strong { color: var(--ink); font-weight: 600; }
+.about-aside { border-top: 1px solid var(--border-strong); }
+.about-fact { display: grid; grid-template-columns: 115px 1fr auto; gap: 1rem; padding: 1.4rem 0; border-bottom: 1px solid var(--border); }
+.about-fact span { color: var(--muted); font: .61rem var(--mono); text-transform: uppercase; letter-spacing: .08em; }
+.about-fact strong { color: var(--ink2); font-size: .88rem; font-weight: 550; }
+.about-fact small { color: var(--muted2); font: .58rem var(--mono); white-space: nowrap; }
+@media (max-width: 800px) { .about-grid { grid-template-columns: 1fr; gap: 3.5rem; } }
+@media (max-width: 480px) { .about-fact { grid-template-columns: 90px 1fr; } .about-fact small { grid-column: 2; } }

@@ -1,4 +1,4 @@
-import { Eye, Lock } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { Project } from "../../types/portfolio";
 import "./ProjectCard.style.css";
 
@@ -9,19 +9,20 @@ type ProjectCardProps = {
 function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="proj-item">
-      <div className="proj-num">{project.number}</div>
+      <div className="proj-visual">
+        {project.image ? (
+          <img src={project.image} alt={`Tela do projeto ${project.name}`} />
+        ) : (
+          <div className="proj-placeholder" aria-label="Imagem do projeto pendente">
+            <span>{project.number}</span>
+            <strong>{project.name.slice(0, 2)}</strong>
+            <small>SCREEN / PENDING</small>
+          </div>
+        )}
+      </div>
 
       <div className="proj-body">
-        <div className="proj-tags">
-          {project.tags.map((tag) => (
-            <span
-              className={tag.tone ? `tag ${tag.tone}` : "tag"}
-              key={tag.label}
-            >
-              {tag.label}
-            </span>
-          ))}
-        </div>
+        <div className="proj-meta"><span>{project.number}</span>{project.kind}</div>
 
         <h3 className="proj-name">{project.name}</h3>
 
@@ -37,41 +38,22 @@ function ProjectCard({ project }: ProjectCardProps) {
           <div className="proj-impact-text">{project.impact}</div>
         )}
 
-        {project.confidential && (
-          <p className="proj-confidential">
-            Case apresentado de forma resumida, respeitando confidencialidade e
-            dados sensíveis.
-          </p>
-        )}
-
         <div className="proj-footer">
-          {project.confidential ? (
-            <span className="proj-cta locked">
-              <Lock size={12} />
-              Projeto confidencial
-            </span>
-          ) : (
-            project.cta && (
+          <div className="proj-stack">
+            {project.stack.map((item) => <span key={item}>{item}</span>)}
+          </div>
+          {project.cta ? (
               <a
                 href={project.cta.href}
                 className="proj-cta"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Eye size={12} />
                 {project.cta.label}
+                <ArrowUpRight size={14} />
               </a>
-            )
-          )}
+          ) : <span className="proj-pending">Case em preparação</span>}
         </div>
-      </div>
-
-      <div className="proj-stack-right">
-        {project.stack.map((item) => (
-          <span className="stack-pill" key={item}>
-            {item}
-          </span>
-        ))}
       </div>
     </article>
   );

@@ -4,15 +4,13 @@ import "./ProjectsSection.style.css";
 
 function ProjectsSection() {
   return (
-    <section className="sec" id="projetos">
+    <section className="sec projects-section" id="projetos">
       <div className="wrap">
         <div className="projects-header">
           <div>
-            <span className="sec-num">— 01</span>
-            <h2 className="sec-title">
-              Projetos com  <em>propósito</em>
-            </h2>
-            <p className="sec-sub">Sistemas reais. Em produção. Para organizações reais.</p>
+            <span className="sec-num">03 / Projetos</span>
+            <h2 className="sec-title">Projetos em destaque</h2>
+            <p className="sec-sub">Aplicações construídas para problemas reais.</p>
           </div>
         </div>
 
